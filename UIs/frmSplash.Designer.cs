@@ -1,7 +1,7 @@
 ﻿
 namespace UIs
 {
-    partial class Form1
+    partial class frmSplash
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -30,7 +30,7 @@ namespace UIs
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();

@@ -13,9 +13,9 @@ using BLL;
 
 namespace UIs
 {
-    public partial class Form1 : Form
+    public partial class frmSplash : Form
     {
-        public Form1()
+        public frmSplash()
         {
             InitializeComponent();
         }
@@ -30,7 +30,14 @@ namespace UIs
             if (progressBar1.Value < 100)
                 progressBar1.Value += 2;
             else
-                Application.Exit();
+            {
+                frmLogin frmLogin1 = new frmLogin();
+                timer1.Enabled = false;
+                frmLogin1.Show();
+                this.Dispose(false);
+            }
+                
+        
         }
     }
 }
