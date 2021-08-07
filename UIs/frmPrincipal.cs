@@ -10,23 +10,21 @@ using System.Windows.Forms;
 
 namespace UIs
 {
-    public partial class frmLogin : Form
+    public partial class frmPrincipal : Form
     {
-        public frmLogin()
+        public frmPrincipal()
         {
             InitializeComponent();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnOK_Click(object sender, EventArgs e)
+        private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmPrincipal frmPrincipal1 = new frmPrincipal();
-            frmPrincipal1.Show();
-            this.Dispose();
+            Application.Exit();
         }
     }
 }

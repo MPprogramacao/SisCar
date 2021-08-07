@@ -16,3 +16,4 @@ C:\Users\Matheus\Desktop\MP\Projetos\C#\SisCar\UIs\obj\Debug\UIs.exe
 C:\Users\Matheus\Desktop\MP\Projetos\C#\SisCar\UIs\obj\Debug\UIs.pdb
 C:\Users\Matheus\Desktop\MP\Projetos\C#\SisCar\UIs\obj\Debug\UIs.frmLogin.resources
 C:\Users\Matheus\Desktop\MP\Projetos\C#\SisCar\UIs\obj\Debug\UIs.frmSplash.resources
+C:\Users\Matheus\Desktop\MP\Projetos\C#\SisCar\UIs\obj\Debug\UIs.frmPrincipal.resources
