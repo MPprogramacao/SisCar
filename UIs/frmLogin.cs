@@ -25,6 +25,7 @@ namespace UIs
         private void btnOK_Click(object sender, EventArgs e)
         {
             frmPrincipal frmPrincipal1 = new frmPrincipal();
+            frmPrincipal1.usuario = txtUsuario.Text;
             frmPrincipal1.Show();
             this.Dispose();
         }

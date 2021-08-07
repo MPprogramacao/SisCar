@@ -26,5 +26,18 @@ namespace UIs
         {
             Application.Exit();
         }
+
+        public string usuario;
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Bem-vindo " + usuario + "!";
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            toolStripStatusLabel2.Text = "Data: " + DateTime.Now.ToShortDateString();
+            toolStripStatusLabel3.Text = "Hora: " + DateTime.Now.ToShortTimeString();
+        }
     }
 }
