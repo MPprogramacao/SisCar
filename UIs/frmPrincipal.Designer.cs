@@ -74,6 +74,8 @@ namespace UIs
             this.exibirBarraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.corDeFundoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.papelDePardeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -215,12 +217,14 @@ namespace UIs
             this.corDeFundoToolStripMenuItem.Name = "corDeFundoToolStripMenuItem";
             this.corDeFundoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.corDeFundoToolStripMenuItem.Text = "C&or de Fundo";
+            this.corDeFundoToolStripMenuItem.Click += new System.EventHandler(this.corDeFundoToolStripMenuItem_Click);
             // 
             // papelDeParedeToolStripMenuItem
             // 
             this.papelDeParedeToolStripMenuItem.Name = "papelDeParedeToolStripMenuItem";
             this.papelDeParedeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.papelDeParedeToolStripMenuItem.Text = "&Papel de Parede";
+            this.papelDeParedeToolStripMenuItem.Click += new System.EventHandler(this.papelDeParedeToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -240,6 +244,7 @@ namespace UIs
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.Color.White;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2,
@@ -405,26 +410,34 @@ namespace UIs
             this.exibirBarraToolStripMenuItem.CheckOnClick = true;
             this.exibirBarraToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.exibirBarraToolStripMenuItem.Name = "exibirBarraToolStripMenuItem";
-            this.exibirBarraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exibirBarraToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exibirBarraToolStripMenuItem.Text = "Exibir barra";
             this.exibirBarraToolStripMenuItem.Click += new System.EventHandler(this.exibirBarraToolStripMenuItem_Click);
             // 
             // corDeFundoToolStripMenuItem1
             // 
             this.corDeFundoToolStripMenuItem1.Name = "corDeFundoToolStripMenuItem1";
-            this.corDeFundoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.corDeFundoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.corDeFundoToolStripMenuItem1.Text = "Cor de fundo";
+            this.corDeFundoToolStripMenuItem1.Click += new System.EventHandler(this.corDeFundoToolStripMenuItem_Click);
             // 
             // papelDePardeToolStripMenuItem
             // 
             this.papelDePardeToolStripMenuItem.Name = "papelDePardeToolStripMenuItem";
-            this.papelDePardeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.papelDePardeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.papelDePardeToolStripMenuItem.Text = "Papel de parde";
+            this.papelDePardeToolStripMenuItem.Click += new System.EventHandler(this.papelDeParedeToolStripMenuItem_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(634, 331);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.toolStrip1);
@@ -494,5 +507,7 @@ namespace UIs
         private System.Windows.Forms.ToolStripMenuItem exibirBarraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem corDeFundoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem papelDePardeToolStripMenuItem;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
